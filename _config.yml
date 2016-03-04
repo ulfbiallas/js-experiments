@@ -1,5 +1,7 @@
 title: JS Experiments
 
+baseurl: /js-experiments
+
 collections:
   experiments:
     output: true

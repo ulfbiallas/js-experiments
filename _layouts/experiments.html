@@ -31,7 +31,7 @@ display: table;
 
 {% for experiment in site.experiments %}
 <div class="frame">
-#{{ experiment.nr }} <a href="{{ experiment.url }}">{{ experiment.title }}</a>
+#{{ experiment.nr }} <a href="{{ site.baseurl }}{{ experiment.url }}">{{ experiment.title }}</a>
 </div>
 {% endfor %}
 
