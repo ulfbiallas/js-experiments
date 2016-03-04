@@ -1,0 +1,6 @@
+title: JS Experiments
+
+collections:
+  experiments:
+    output: true
+    permalink: /:collection/:name/

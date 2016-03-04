@@ -1,0 +1,43 @@
+<html>
+
+<head>
+
+<title>{{ site.title }}</title>
+
+<style>
+.frame {
+   background-color: #cccccc;
+   width: 520px;
+   border-radius: 5px;
+   padding: 5px;
+   margin: 10px;
+}
+
+#page {
+display: table;
+    margin: 0 auto;
+}
+</style>
+</head>
+
+
+<body>
+<div id="page">
+
+
+<div class="frame">
+<h2>{{ site.title }}</h2>
+</div>
+
+{% for experiment in site.experiments %}
+<div class="frame">
+#{{ experiment.nr }} <a href="{{ experiment.url }}">{{ experiment.title }}</a>
+</div>
+{% endfor %}
+
+
+</div>
+</body>
+
+</html>
+

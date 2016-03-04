@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>{{ site.title }} - #{{page.nr}} {{ page.title }}</title>
+
+<style>
+.frame {
+   background-color: #cccccc;
+   width: 520px;
+   border-radius: 5px;
+   padding: 5px;
+   margin: 10px;
+}
+
+.tag {
+   background-color: #eeeeee;
+   border-radius: 3px;
+   display: inline-block;
+   padding: 3px;
+   margin: 3px;
+}
+
+#page {
+display: table;
+    margin: 0 auto;
+}
+
+#content {
+   margin: 10px;
+}
+
+</style>
+</head>
+
+  <body>
+<div id="page">
+
+<div class="frame" id="title">
+{{ page.title }}
+</div>
+
+<div class="frame">
+<div id="content">
+{{ content }}
+</div>
+</div>
+
+{% if page.description %}
+<div class="frame" id="description">
+{% include_relative {{ page.description }} %}
+</div>
+{% endif %}
+
+{% comment %}
+<div class="frame" id="tags">
+{% for tag in page.tags %}
+<div class="tag">
+{{tag}}
+</div>
+{% endfor %}
+</div>
+{% endcomment %}
+
+</div>
+</body>
+
+</html>
+
+
+
+
