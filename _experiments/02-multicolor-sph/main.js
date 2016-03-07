@@ -10,8 +10,8 @@ requirejs(['Grid', 'Particle', 'Simulator'], function (Grid, Particle, Simulator
   var mouseX = 0;
   var mouseY = 0;
 
-  var imageWidth = 500;
-  var imageHeight = 500;
+  var imageWidth = 512;
+  var imageHeight = 512;
 
   var simulator = new Simulator(imageWidth, imageHeight);
 

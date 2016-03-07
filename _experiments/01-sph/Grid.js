@@ -4,7 +4,7 @@ define("Grid", function () {
     this.width = width;
     this.h = h;
     this.cellCount = (width+2*h) / h * (height+2*h) / h;
-    this.cells = new Array(this.cellCount);
+    this.cells = new Array(Math.ceil(this.cellCount));
     this.init();
   }
 

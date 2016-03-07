@@ -1,10 +1,10 @@
 requirejs([], function () {
 
-var imageWidth = 500
-var imageHeight = 500
+var imageWidth = 512
+var imageHeight = 512
 
-var mapWidth = 100
-var mapHeight = 100
+var mapWidth = 128
+var mapHeight = 128
 
 var paintingRadius = 20
 var paintingStrength = 0.05
